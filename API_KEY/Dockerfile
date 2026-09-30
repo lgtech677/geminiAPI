@@ -5,6 +5,6 @@ RUN apt-get update \
     && docker-php-ext-install curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY . /var/www/html/
+COPY combinar.php /var/www/html/combinar.php
 
 EXPOSE 80
